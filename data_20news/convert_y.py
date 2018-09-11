@@ -1,0 +1,26 @@
+with open("test.labels") as f:
+	for line in f:
+		line = line.replace("\"", "")
+		line = line.replace("alt.atheism", "0")
+		line = line.replace("comp.graphics", "1")
+		line = line.replace("comp.os.ms-windows.misc", "2")
+		line = line.replace("comp.sys.ibm.pc.hardware", "3")
+		line = line.replace("comp.sys.mac.hardware", "4")
+		line = line.replace("comp.windows.x", "5")
+		line = line.replace("misc.forsale", "6")
+		line = line.replace("rec.autos", "7")
+		line = line.replace("rec.motorcycles", "8")
+		line = line.replace("rec.sport.baseball", "9")
+		line = line.replace("rec.sport.hockey", "10")
+		line = line.replace("sci.crypt", "11")
+		line = line.replace("sci.electronics", "12")
+		line = line.replace("sci.med", "13")
+		line = line.replace("sci.space", "14")
+		line = line.replace("soc.religion.christian", "15")
+		line = line.replace("talk.politics.guns", "16")
+		line = line.replace("talk.politics.mideast", "17")
+		line = line.replace("talk.politics.misc", "18")
+		line = line.replace("talk.religion.misc", "19")
+
+with open("test_labels.txt", "w") as text_file:
+    text_file.write(line)
